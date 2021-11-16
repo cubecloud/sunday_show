@@ -617,7 +617,6 @@ class TSModel:
                 self.data_storage[pair_symbol].update({interval: interval_dict})
         pass
 
-
     def compile(self,
                 use_pairs=("BTCUSDT",
                            "ETHUSDT"),
