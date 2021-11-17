@@ -63,8 +63,8 @@ def prepare_dev_stationary():
 
 class TSModel:
     def __init__(self,
-                 dataset_period,
-                 data_path) -> None:
+                 dataset_period: Tuple[str, str],
+                 data_path: str) -> None:
         """
         Returns:
             None
@@ -652,6 +652,7 @@ if __name__ == '__main__':
     pd.set_option('display.max_colwidth', None)
     symbol = "ETHUSDT"
 
+    # noinspection PyUnboundLocalVariable
     ds = TSModel(dataset_period=('2019-12-31 20:59:59.000',
                                  '2021-10-31 20:59:59.000'),
                  data_path=DEV_DATA,
